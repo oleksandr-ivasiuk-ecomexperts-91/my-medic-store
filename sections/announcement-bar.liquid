@@ -32,6 +32,13 @@
     @media screen and (min-width: 750px) {
       padding: 1.2rem 0 1.1rem 0;
     }
+
+    /* Ensure page-width is defined or adjust selector accordingly */
+    & .page-width {
+      max-width: 1200px; /* Example max-width, adjust to your theme's standard */
+      margin: 0 auto;
+      padding: 0 15px; /* Example padding, adjust to your theme's standard */
+    }
   }
 
   .announcement-bar__content {
@@ -64,14 +71,6 @@
   .announcement-bar__link:hover {
     text-decoration-thickness: 2px; /* Optional: thicker underline on hover */
   }
-
-  /* Ensure page-width is defined or adjust selector accordingly */
-  .page-width {
-    max-width: 1200px; /* Example max-width, adjust to your theme's standard */
-    margin: 0 auto;
-    padding: 0 15px; /* Example padding, adjust to your theme's standard */
-  }
-
 </style>
 
 {% schema %}
