@@ -26,8 +26,12 @@
 
 <style>
   .announcement-bar {
-    padding: 10px 0;
+    padding: 1rem 0 .9rem 0;
     text-align: center;
+
+    @media screen and (min-width: 750px) {
+      padding: 1.2rem 0 1.1rem 0;
+    }
   }
 
   .announcement-bar__content {
@@ -38,19 +42,23 @@
 
   .announcement-bar__message {
     margin: 0;
-    font-size: 14px; /* Adjust as needed */
-    font-weight: 500; /* Adjust as needed */
-    line-height: 1.2;
+    font-size: 1.4rem;  /* Adjust as needed */
+    font-weight: 600;   /* Adjust as needed */
+    line-height: 1;
     white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5em;
+
+    @media screen and (min-width: 750px) {
+      font-size: 1.8rem;
+    }
   }
 
   .announcement-bar__link {
     text-decoration: underline;
-    text-underline-offset: 0.2em; /* Adjust underline position */
+    text-underline-offset: 0.15em; /* Adjust underline position */
   }
 
   .announcement-bar__link:hover {
