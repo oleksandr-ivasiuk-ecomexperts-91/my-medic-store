@@ -108,8 +108,16 @@
     }
   {% endif %}
   #main-header nav a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 100%;
     text-decoration: none;
-    color: inherit;
+    color: #000;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-foreground);
+    }
   }
   #header-cart-bubble {
       position: relative;
@@ -298,7 +306,7 @@
   {% endif %}
 >
   <header
-    class="page-width"
+    class="container--full"
     id="main-header"
     x-data="{ searchOpen: false, searchTerm: '' }"
     @click.outside="searchOpen = false"
