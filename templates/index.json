@@ -7,20 +7,21 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "hero_banner_1": {
       "type": "hero-banner",
       "settings": {
-        "background_type": "video",
+        "background_type": "image",
+        "image_background": "shopify://shop_images/hero-banner-image.jpg",
         "video_background_url": "",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "text_color": "#ffffff",
-        "stars_text": "Trusted By 30,539+ Players",
-        "heading": "END OF SEASON SALE",
-        "subheading": "Pro level protection for every level",
-        "button_text": "SAVE OVER 30%",
+        "stars_text": "save up tp 50% off",
+        "heading": "Summer Sale",
+        "subheading": "Earn up to $100 in free gifts + free shipping",
+        "button_text": "SHOP NOW",
         "button_link": "shopify://collections/cam-plans",
         "show_endorsement": false,
         "endorsement_name": "TJ Oshie"
@@ -32,21 +33,18 @@
         "block_1": {
           "type": "icon_block",
           "settings": {
-            "icon": "shopify://shop_images/Screenshot_2.png",
             "text": "Lifetime Guarantee"
           }
         },
         "block_2": {
           "type": "icon_block",
           "settings": {
-            "icon": "shopify://shop_images/Screenshot_3.png",
             "text": "Free Shipping $250+"
           }
         },
         "block_3": {
           "type": "icon_block",
           "settings": {
-            "icon": "shopify://shop_images/Screenshot_4.png",
             "text": "7,000+ Satisfied Customers"
           }
         }
@@ -56,6 +54,7 @@
         "block_2",
         "block_3"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#000000",
         "text_color": "#ffffff"
@@ -191,7 +190,6 @@
         "caption_epYF98"
       ],
       "settings": {
-        "image": "shopify://shop_images/c683db3263f6bf7b4823b02ade2d9697.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -249,7 +247,6 @@
         "hotspot_C"
       ],
       "settings": {
-        "image": "shopify://shop_images/bf5e2b0fa2e08627d8d95ac8b00ec031.jpg",
         "container_width": "standard",
         "container_horizontal_alignment": "center",
         "container_vertical_alignment": "center",
@@ -360,7 +357,6 @@
         "block_comp_1": {
           "type": "product_column",
           "settings": {
-            "image": "shopify://shop_images/fbb80e66561a67069d96a5627b817af9.png",
             "product_name": "PRO STOCK NECK & WRIST",
             "ideal_for": "Ideal for players who need top-rated neck and wrist protection against skate blade lacerations.",
             "feature_1_label": "Cut Resistant Forearms",
@@ -380,7 +376,6 @@
         "product_column_CFJVwd": {
           "type": "product_column",
           "settings": {
-            "image": "shopify://shop_images/c24980778bf0c3d75a1992b3b5f4ef45.png",
             "product_name": "PADLOC NECK & WRIST",
             "ideal_for": "Ideal for players who need top-rated neck and wrist protection against skate blade lacerations.",
             "feature_1_label": "Cut Resistant Forearms",
@@ -413,7 +408,6 @@
         "celeb_1": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/fbb80e66561a67069d96a5627b817af9.png",
             "name": "TJ Oshie",
             "title": "Washington Capitals"
           }
@@ -421,7 +415,6 @@
         "celeb_2": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/c24980778bf0c3d75a1992b3b5f4ef45.png",
             "name": "Tom Wilson",
             "title": "Washington Capitals"
           }
@@ -429,7 +422,6 @@
         "celeb_3": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/3476b6ef9bf1785c69265c783a09c611.png",
             "name": "Brock Nelson",
             "title": "New York Islanders"
           }
@@ -437,7 +429,6 @@
         "celeb_4": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/a3e603e90e40ccf1528c80fe4f0a60a8.png",
             "name": "Matthew Knies",
             "title": "Toronto Maple Leafs"
           }
@@ -445,7 +436,6 @@
         "celeb_5": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/squatting-exercise.jpg",
             "name": "Josh Morrissey",
             "title": "Winnipeg Jets"
           }
@@ -453,7 +443,6 @@
         "celeb_6": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/da4d55734407ed4fc25a417f3d4a51ee.png",
             "name": "Jared Spurgeon",
             "title": "Minnesota Wild"
           }
@@ -461,7 +450,6 @@
         "celebrity_9Baptk": {
           "type": "celebrity",
           "settings": {
-            "image": "shopify://shop_images/2015-07-02_Ashley_33_51032_24034.jpg",
             "name": "Bruce Wayne",
             "title": "Bat Man"
           }
@@ -513,7 +501,6 @@
         "button_FER6KN"
       ],
       "settings": {
-        "image": "shopify://shop_images/a35c29244d5539befa47d6401fd1d75f.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
