@@ -5,7 +5,7 @@
     top: 100%;
     width: 100%;
     display: flex;
-    padding: 3rem 5rem;
+    padding: 3rem 6.2rem 3rem 5rem;
     border-top: 2px solid #000;
   }
   #main-header .nav-megamenu .page-width {
@@ -29,7 +29,6 @@
     display: block;
   }
   #main-header .nav-megamenu_heading {
-    font-weight: 600;
     display: flex;
     align-items: center;
     gap: .6rem;
@@ -137,6 +136,18 @@
               {%- endunless -%}
             {%- endfor -%}
           </ul>
+          {% assign right_special_collection = collections['burn'] %}
+          {%- if right_special_collection != blank and right_special_collection.featured_image != blank -%}
+            <ul class="nav-megamenu_right">
+              <li>
+                {{
+                  right_special_collection.featured_image
+                  | image_url: width: 180
+                  | image_tag: loading: 'lazy'
+                }}
+              </li>
+            </ul>
+          {%- endif -%}
         </div>
       {% else %}
         <a

@@ -15,11 +15,11 @@
       "type": "announcement-bar",
       "settings": {
         "show_announcement": true,
-        "text": "PROTECT HOCKEY'S FUTURE",
-        "link_text": "SAVE ON TILÖ TODAY",
+        "text": "",
+        "link_text": "Summer Sale! Up To 50% OFF + FREE Gifts",
         "link_url": "shopify://blogs/news",
-        "emoji": "🚨",
-        "background_color": "#000000",
+        "emoji": "",
+        "background_color": "#ED1B24",
         "text_color": "#ffffff"
       }
     },
