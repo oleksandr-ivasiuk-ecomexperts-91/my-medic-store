@@ -27,80 +27,6 @@
         "endorsement_name": "TJ Oshie"
       }
     },
-    "icon_bar_1": {
-      "type": "icon-bar",
-      "blocks": {
-        "block_1": {
-          "type": "icon_block",
-          "settings": {
-            "text": "Lifetime Guarantee"
-          }
-        },
-        "block_2": {
-          "type": "icon_block",
-          "settings": {
-            "text": "Free Shipping $250+"
-          }
-        },
-        "block_3": {
-          "type": "icon_block",
-          "settings": {
-            "text": "7,000+ Satisfied Customers"
-          }
-        }
-      },
-      "block_order": [
-        "block_1",
-        "block_2",
-        "block_3"
-      ],
-      "disabled": true,
-      "settings": {
-        "background_color": "#000000",
-        "text_color": "#ffffff"
-      }
-    },
-    "featured_products_example": {
-      "type": "featured-products",
-      "blocks": {
-        "block_1": {
-          "type": "product_card",
-          "settings": {
-            "product": "alex-twill-pant-navy"
-          }
-        },
-        "block_2": {
-          "type": "product_card",
-          "settings": {
-            "product": "alia-knit-trouser-1"
-          }
-        },
-        "block_3": {
-          "type": "product_card",
-          "settings": {
-            "product": "alverstone-jacket-midnight"
-          }
-        },
-        "block_4": {
-          "type": "product_card",
-          "settings": {
-            "product": "3-4-sleeve-kimono-dress-coral"
-          }
-        }
-      },
-      "block_order": [
-        "block_1",
-        "block_2",
-        "block_3",
-        "block_4"
-      ],
-      "settings": {
-        "heading": "Shop the Pro Selection",
-        "subheading": "Skate like the pros",
-        "view_all_text": "View All",
-        "view_all_url": "shopify://collections/spring"
-      }
-    },
     "featured_collections_example": {
       "type": "featured-collections",
       "blocks": {
@@ -143,8 +69,100 @@
         "block_5"
       ],
       "settings": {
-        "heading": "Find the perfect fit for your game",
-        "subheading": "Browse through our collections"
+        "heading": "Collections",
+        "subheading": "Explore our top-rated emergency kits, designed with your safety in mind. From comprehensive first aid solutions to specialized gear for any scenario, our products are trusted by professionals and adventurers alike. Be prepared for anything with MyMedic."
+      }
+    },
+    "icon_bar_1": {
+      "type": "icon-bar",
+      "blocks": {
+        "block_1": {
+          "type": "icon_block",
+          "settings": {
+            "icon": "shopify://shop_images/icon-hand-picked.png",
+            "text": "hand-pickedby experts"
+          }
+        },
+        "block_2": {
+          "type": "icon_block",
+          "settings": {
+            "icon": "shopify://shop_images/icon-built-in-usa.png",
+            "text": "built in the usa"
+          }
+        },
+        "block_3": {
+          "type": "icon_block",
+          "settings": {
+            "icon": "shopify://shop_images/icon-lifetime-guarantee.png",
+            "text": "lifetime guarantee"
+          }
+        },
+        "icon_block_EqipfU": {
+          "type": "icon_block",
+          "settings": {
+            "icon": "shopify://shop_images/hsa_fsa_approved.png",
+            "text": "hsa/fsa approved"
+          }
+        },
+        "icon_block_jcmbXD": {
+          "type": "icon_block",
+          "settings": {
+            "icon": "shopify://shop_images/lifesaving_gear.png",
+            "text": "lifesaving gear"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "icon_block_EqipfU",
+        "icon_block_jcmbXD"
+      ],
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#4d4d4d"
+      }
+    },
+    "featured_products_example": {
+      "type": "featured-products",
+      "blocks": {
+        "block_1": {
+          "type": "product_card",
+          "settings": {
+            "product": "alex-twill-pant-navy"
+          }
+        },
+        "block_2": {
+          "type": "product_card",
+          "settings": {
+            "product": "alia-knit-trouser-1"
+          }
+        },
+        "block_3": {
+          "type": "product_card",
+          "settings": {
+            "product": "alverstone-jacket-midnight"
+          }
+        },
+        "block_4": {
+          "type": "product_card",
+          "settings": {
+            "product": "3-4-sleeve-kimono-dress-coral"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4"
+      ],
+      "settings": {
+        "heading": "Shop the Pro Selection",
+        "subheading": "Skate like the pros",
+        "view_all_text": "View All",
+        "view_all_url": "shopify://collections/spring"
       }
     },
     "fist-of-collections": {
@@ -518,9 +536,9 @@
   },
   "order": [
     "hero_banner_1",
+    "featured_collections_example",
     "icon_bar_1",
     "featured_products_example",
-    "featured_collections_example",
     "fist-of-collections",
     "image_with_text_UnGP37",
     "image_hotspots_1",
