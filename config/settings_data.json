@@ -7,15 +7,15 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "current": {
-    "logo": "shopify://shop_images/design-graphic.png",
-    "logo_height": 60,
-    "type_header_font": "assistant_n4",
+    "logo": "shopify://shop_images/logo.png",
+    "logo_height": 30,
+    "type_header_font": "poppins_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "poppins_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1400,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -311,9 +311,9 @@
           }
         }
       },
-      "type_header_font": "assistant_n4",
+      "type_header_font": "poppins_n4",
       "heading_scale": 100,
-      "type_body_font": "assistant_n4",
+      "type_body_font": "poppins_n4",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,

@@ -3,8 +3,8 @@
 .hero-banner-section {
   position: relative;
   color: var(--hero-text-color, #FFFFFF); /* Use variable, provide fallback */
-  padding: 60px 20px;
-  min-height: 600px;
+  padding: 6.7rem 11.9rem;
+  min-height: 57.7rem;
   display: flex;
   align-items: flex-end;
   background-color: #000;
@@ -46,12 +46,18 @@
   margin-left: 0;
   margin-right: auto;
   text-align: left;
-  padding: 0 5%;
 }
 
 .hero-banner-section .hero-banner__stars {
-  margin-bottom: 8px;
-  font-size: 0.9em;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 750px) {
+    font-size: 2rem;
+  }
 }
 
 .hero-banner-section .hero-banner__stars .stars {
@@ -60,32 +66,48 @@
 }
 
 .hero-banner-section .hero-banner__heading {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-  font-weight: bold;
-  line-height: 1.2;
+  font-size: 9.6rem;
+  margin-top: .6rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
   color: var(--hero-text-color, #FFFFFF); /* Explicitly use variable */
 }
 
 .hero-banner-section .hero-banner__subheading {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   max-width: 600px;
 }
 
 .hero-banner-section .hero-banner__button {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #fff;
-  color: #000;
+  display: inline-flex;
+  align-items: center;
+  min-height: 4.6rem;
+  background-color: #D62A27;
+  color: #FFF;
+  padding: 0 4rem;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
   transition: background-color 0.3s ease;
+
+  @media screen and (min-width: 750px) {
+    min-height: 7.2rem;
+    padding: 0 5rem;
+    font-size: 4rem;
+    font-weight: 600;
+  }
 }
 
 .hero-banner-section .hero-banner__button:hover {
-  background-color: #eee;
+  background-color: #B2231F;
 }
 
 .hero-banner-section .hero-banner__endorsement {
@@ -110,24 +132,28 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-banner-section {
-    padding: 40px 15px;
-    min-height: 450px;
+    padding: 5rem 2rem;
+    min-height: 590px;
   }
 
   .hero-banner-section .hero-banner__content {
     text-align: left;
     margin-left: 0;
     margin-right: auto;
-    padding: 0 10px;
     max-width: 90%;
   }
 
   .hero-banner-section .hero-banner__heading {
-    font-size: 2em;
+    font-size: 6rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
   }
 
   .hero-banner-section .hero-banner__subheading {
-    font-size: 1em;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1.3rem;
+    margin-bottom: 4.8rem;
   }
 
   .hero-banner-section .hero-banner__endorsement {

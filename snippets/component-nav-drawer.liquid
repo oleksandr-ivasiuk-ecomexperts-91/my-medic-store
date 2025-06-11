@@ -12,11 +12,22 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  #header-drawer {
+    order: 1;
+
+    @media screen and (min-width: 750px) {
+      order: unset;
+    }
+  }
   #header-drawer #menu-drawer.drawer-open {
     transform: translateX(0);
   }
+  #main-header button.header-drawer_icons {
+    padding-block: 0;
+    padding-inline: 0;
+  }
   #main-header .header-drawer_icons svg {
-    width: 20px;
+    width: 2.4rem;
   }
   #header-drawer .header-drawer_icons.drawer-open svg.icon-menu,
   #header-drawer .header-drawer_icons:not(.drawer-open) svg.icon-close {
