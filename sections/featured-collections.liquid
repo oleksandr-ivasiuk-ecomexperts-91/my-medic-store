@@ -9,56 +9,67 @@
 -%}
 
 {%- if collections_to_show > 0 -%}
-  <div class="featured-collections-section page-width">
-    <div class="featured-collections__header title-wrapper title-wrapper--no-top-margin">
-      {%- if heading != blank -%}
-        <h2 class="featured-collections__heading title h2">{{ heading | escape }}</h2>
-      {%- endif -%}
-      {%- if subheading != blank -%}
-        <p class="featured-collections__subheading subtitle">{{ subheading | escape }}</p>
-      {%- endif -%}
-    </div>
+  <featured-collections>
+    {{ 'swiper7.4.1.min.css' | asset_url | stylesheet_tag }}
 
-    {% comment %} Use the grid classes from base.css (flexbox based) {% endcomment %}
-    {%- assign grid_classes = 'grid grid--5-col-desktop grid--2-col-tablet-down' -%}
-    <div class="featured-collections__grid {{ grid_classes }}">
-      {%- for block in section.blocks -%}
-        {%- assign collection = block.settings.collection -%}
-        {%- assign collection_image = collection.featured_image | default: collection.image -%}
+    <div class="featured-collections-section page-width">
+      <div class="featured-collections__header title-wrapper title-wrapper--no-top-margin">
+        {%- if heading != blank -%}
+          <h2 class="featured-collections__heading title h2">{{ heading | escape }}</h2>
+        {%- endif -%}
+        {%- if subheading != blank -%}
+          <p class="featured-collections__subheading subtitle">{{ subheading | escape }}</p>
+        {%- endif -%}
+      </div>
+      
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            {%- assign collection = block.settings.collection -%}
+            {%- assign collection_image = collection.featured_image | default: collection.image -%}
 
-        <div class="featured-collections__card grid__item" {{ block.shopify_attributes }}>
-          <a href="{{ collection.url | default: '#' }}" class="collection-card__link">
-            <div class="collection-card__image-wrapper media media--portrait {% if collection_image == blank %} placeholder {% endif %}">
-              {%- if collection_image != blank -%}
-                <img
-                  srcset="
-                    {%- if collection_image.width >= 165 -%}{{ collection_image | image_url: width: 165 }} 165w,{%- endif -%}
-                    {%- if collection_image.width >= 360 -%}{{ collection_image | image_url: width: 360 }} 360w,{%- endif -%}
-                    {%- if collection_image.width >= 533 -%}{{ collection_image | image_url: width: 533 }} 533w,{%- endif -%}
-                    {%- if collection_image.width >= 720 -%}{{ collection_image | image_url: width: 720 }} 720w,{%- endif -%}
-                    {{ collection_image | image_url }} {{ collection_image.width }}w
-                  "
-                  src="{{ collection_image | image_url: width: 533 }}"
-                  sizes="(min-width: 990px) calc(var(--page-width) / 5 - var(--grid-desktop-horizontal-spacing) * 4 / 5), (min-width: 750px) calc(100vw / 2 - var(--grid-desktop-horizontal-spacing) / 2 - 4rem), calc(100vw / 2 - var(--grid-mobile-horizontal-spacing) / 2 - 2rem)"
-                  alt="{{ collection_image.alt | escape }}"
-                  loading="lazy"
-                  width="{{ collection_image.width }}"
-                  height="{{ collection_image.height }}"
-                  class="collection-card__image"
-                >
-              {%- else -%}
-                {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg collection-card__image' }}
-              {%- endif -%}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+              <a href="{{ collection.url | default: '#' }}" class="collection-card__link">
+                <div class="collection-card__image-wrapper media media--portrait {% if collection_image == blank %} placeholder {% endif %}">
+                  {%- if collection_image != blank -%}
+                    <img
+                      srcset="
+                        {%- if collection_image.width >= 165 -%}{{ collection_image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if collection_image.width >= 360 -%}{{ collection_image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if collection_image.width >= 533 -%}{{ collection_image | image_url: width: 533 }} 533w,{%- endif -%}
+                        {%- if collection_image.width >= 720 -%}{{ collection_image | image_url: width: 720 }} 720w,{%- endif -%}
+                        {{ collection_image | image_url }} {{ collection_image.width }}w
+                      "
+                      src="{{ collection_image | image_url: width: 533 }}"
+                      sizes="(min-width: 990px) calc(var(--page-width) / 5 - var(--grid-desktop-horizontal-spacing) * 4 / 5), (min-width: 750px) calc(100vw / 2 - var(--grid-desktop-horizontal-spacing) / 2 - 4rem), calc(100vw / 2 - var(--grid-mobile-horizontal-spacing) / 2 - 2rem)"
+                      alt="{{ collection_image.alt | escape }}"
+                      loading="lazy"
+                      width="{{ collection_image.width }}"
+                      height="{{ collection_image.height }}"
+                      class="collection-card__image"
+                    >
+                  {%- else -%}
+                    {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg collection-card__image' }}
+                  {%- endif -%}
+                </div>
+                <div class="collection-card__info">
+                  <h3 class="collection-card__title h3">{{ collection.title | default: 'Collection Title' }}</h3>
+                  <h3 class="collection-card__heading h4">{{ collection.description | default: 'Collection Description' }}</h3>
+                  <span class="collection-card__shop-now link underlined-link">Shop Now</span>
+                </div>
+              </a>
             </div>
-            <div class="collection-card__info">
-              <h3 class="collection-card__title h3">{{ collection.title | default: 'Collection Title' }}</h3>
-              <span class="collection-card__shop-now link underlined-link">Shop Now</span>
-            </div>
-          </a>
+          {%- endfor -%}
         </div>
-      {%- endfor -%}
+        <div class="swiper-pagination">&nbsp;</div>
+        <div class="swiper-button-prev">&nbsp;</div>
+        <div class="swiper-button-next">&nbsp;</div>
+      </div>
     </div>
-  </div>
+
+    <script src="{{ 'component-featured-collections.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ "swiper7.4.1.min.js" | asset_url }}" defer="defer" id="swiper-script"></script>
+  </featured-collections>
 {%- endif -%}
 
 {% schema %}
