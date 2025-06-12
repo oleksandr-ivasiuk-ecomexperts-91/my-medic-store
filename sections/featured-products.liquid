@@ -5,6 +5,7 @@
 {%- liquid
   assign heading = section.settings.heading
   assign subheading = section.settings.subheading
+  assign author = section.settings.author
   assign view_all_text = section.settings.view_all_text
   assign view_all_url = section.settings.view_all_url
   assign products_to_show = section.blocks.size
@@ -19,6 +20,9 @@
         {%- endif -%}
         {%- if subheading != blank -%}
           <p class="featured-products__subheading">{{ subheading | escape }}</p>
+        {%- endif -%}
+        {%- if author != blank -%}
+          <p class="featured-products__author">-{{ author | escape }}</p>
         {%- endif -%}
       </div>
       {%- if view_all_text != blank and view_all_url != blank -%}
@@ -110,6 +114,12 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "Skate like the pros"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author name",
+      "default": "Michael B."
     },
     {
       "type": "text",

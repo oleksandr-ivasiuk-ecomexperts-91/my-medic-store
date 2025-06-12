@@ -33,25 +33,25 @@
         "block_1": {
           "type": "collection_card",
           "settings": {
-            "collection": "spring"
+            "collection": "first-aid-kits"
           }
         },
         "block_2": {
           "type": "collection_card",
           "settings": {
-            "collection": "summer"
+            "collection": "community-favorites"
           }
         },
         "block_3": {
           "type": "collection_card",
           "settings": {
-            "collection": "winter"
+            "collection": "specialized-selections"
           }
         },
         "block_4": {
           "type": "collection_card",
           "settings": {
-            "collection": "spring"
+            "collection": "trusted-gear"
           }
         },
         "block_5": {
@@ -130,25 +130,25 @@
         "block_1": {
           "type": "product_card",
           "settings": {
-            "product": "alex-twill-pant-navy"
+            "product": "sidekick"
           }
         },
         "block_2": {
           "type": "product_card",
           "settings": {
-            "product": "alia-knit-trouser-1"
+            "product": "superskin-blister"
           }
         },
         "block_3": {
           "type": "product_card",
           "settings": {
-            "product": "alverstone-jacket-midnight"
+            "product": "myfak"
           }
         },
         "block_4": {
           "type": "product_card",
           "settings": {
-            "product": "3-4-sleeve-kimono-dress-coral"
+            "product": "fingertip-bandage"
           }
         }
       },
@@ -159,9 +159,10 @@
         "block_4"
       ],
       "settings": {
-        "heading": "Shop the Pro Selection",
-        "subheading": "Skate like the pros",
-        "view_all_text": "View All",
+        "heading": "real world life-savers",
+        "subheading": "“This kit is the perfect fill-in for a well designed trauma package! It could mean the difference between life or death!”",
+        "author": "Michael B.",
+        "view_all_text": "",
         "view_all_url": "shopify://collections/spring"
       }
     },

@@ -1,7 +1,7 @@
 /* sections/featured-products.liquid */
 
 .featured-products-section {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
 }
 
@@ -19,20 +19,48 @@
 }
 
 .featured-products__heading {
-  margin-bottom: 0.5rem; /* Adjust spacing */
-  font-size: 3rem; /* Example size */
-  font-weight: bold;
+  background-color: #F1F1F1;
+  color: #313131;
+  margin: 0;
+  padding: 1.4rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 3.2rem;
   text-transform: uppercase;
-  margin-top: 0;
-  /* Assuming H2 style from base.css is sufficient */
+  text-align: center;
 }
 
 .featured-products__subheading {
-  margin-top: 0;
-  margin-bottom: 0; /* Remove bottom margin */
-  font-size: 1rem; /* Example size */
-  color: #000000; /* Make subheading black */
-  font-style: italic; /* Make subheading italic */
+  margin-top: 6rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: #4D4D4D;
+  text-align: left;
+
+  @media screen and (min-width: 750px) {
+    text-align: center;
+  }
+}
+
+.featured-products__author {
+  color: #231F20;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: right;
+  text-decoration: underline;
+  text-underline-offset: .2rem;
+  text-decoration-thickness: .5rem;
+  margin-top: 1.2rem;
+  
+  @media screen and (min-width: 750px) {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 .featured-products__view-all {
@@ -76,7 +104,7 @@
   overflow: hidden;
   margin-bottom: 1rem; /* Space between image and info */
   aspect-ratio: 1 / 1.2; /* Adjust aspect ratio as needed */
-  background-color: #f5f5f5; /* Placeholder background */
+  background-color: transparent;
 }
 
 .product-card__image {
