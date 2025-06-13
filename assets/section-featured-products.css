@@ -51,7 +51,7 @@
   line-height: 1.8rem;
   text-align: right;
   text-decoration: underline;
-  text-underline-offset: .2rem;
+  text-underline-offset: .5rem;
   text-decoration-thickness: .5rem;
   margin-top: 1.2rem;
   
@@ -80,6 +80,39 @@
   /* Let base.css handle the width calculations */
   /* e.g., width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4); */
   max-width: none; /* Override base.css potentially limiting max-width */
+}
+
+.featured-products__carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+    gap: 9.3rem;
+  }
+
+  & .featured-products__carousel-heading {
+    color: #E0222D;
+    font-size: 2.4rem;
+    line-height: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 750px) {
+      font-size: 3.6rem;
+    }
+  }
+
+  & .featured-products__carousel-content {
+    width: 100%;
+
+    & .swiper-slide {
+      width: 100% !important;
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .product-card {

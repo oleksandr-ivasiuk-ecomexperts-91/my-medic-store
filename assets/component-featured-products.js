@@ -1,5 +1,5 @@
-if (!customElements.get('featured-collections')) {
-  class FeaturedCollections extends HTMLElement {
+if (!customElements.get('featured-products')) {
+  class FeaturedProducts extends HTMLElement {
     #swiper = null;
 
     constructor() {
@@ -30,13 +30,12 @@ if (!customElements.get('featured-collections')) {
             spaceBetween: 20
           }
         },
-        navigation: {
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
+        pagination: {
+          el: '.swiper-pagination',
         }
       });
     }
   }
 
-  customElements.define('featured-collections', FeaturedCollections);
+  customElements.define('featured-products', FeaturedProducts);
 }
